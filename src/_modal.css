@@ -1,0 +1,25 @@
+.modal::backdrop {
+    background: rgba(0, 0, 0, .1);
+}
+
+.modal {
+    /*padding: 0;
+    display: grid;
+    grid-gap: 7px;*/
+}
+
+.modal > footer {
+    padding-top: 15px;
+}
+
+.modal-content {
+    /*border: 1px solid red;*/
+}
+
+
+
+@media (min-width: 600px) {
+    .modal {
+        max-width: 500px;
+    }
+}

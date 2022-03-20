@@ -149,6 +149,11 @@
     justify-content: flex-start;
 }
 
+.is-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
 .is-fixed {
     position: fixed;
     width: 100%;

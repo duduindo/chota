@@ -821,6 +821,28 @@ details.dropdown > :last-child {
   left: 0;
   white-space: nowrap;
 }
+.modal::-webkit-backdrop {
+    background: rgba(0, 0, 0, .1);
+}
+.modal::backdrop {
+    background: rgba(0, 0, 0, .1);
+}
+.modal {
+    /*padding: 0;
+    display: grid;
+    grid-gap: 7px;*/
+}
+.modal > footer {
+    padding-top: 15px;
+}
+.modal-content {
+    /*border: 1px solid red;*/
+}
+@media (min-width: 600px) {
+    .modal {
+        max-width: 500px;
+    }
+}
 /* Colors */
 .bg-primary {
     background-color: var(--color-primary) !important;
@@ -962,6 +984,14 @@ details.dropdown > :last-child {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+}
+.is-space-between {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .is-fixed {
     position: fixed;

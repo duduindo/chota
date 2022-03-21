@@ -828,15 +828,47 @@ details.dropdown > :last-child {
     background: rgba(0, 0, 0, .1);
 }
 .modal {
-    /*padding: 0;
+    padding: 0;
     display: grid;
-    grid-gap: 7px;*/
+    grid-gap: 16px;
+    border-width: 1px;
+    border-color: rgba(0,0,0,.2);
+    border-radius: 5px;
+    -ms-scroll-chaining: none;
+        overscroll-behavior: contain;
+}
+.modal > header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 1px solid var(--color-lightGrey);
+    padding: 16px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+.modal > header > * {
+    margin: 0;
+    padding: 0;
+    background: transparent;
 }
 .modal > footer {
-    padding-top: 15px;
+    border-top: 1px solid var(--color-lightGrey);
+    padding: 16px;
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+    z-index: 1;
 }
-.modal-content {
-    /*border: 1px solid red;*/
+.modal > *:not(header, footer) {
+    margin-inline: 16px;
 }
 @media (min-width: 600px) {
     .modal {
@@ -992,6 +1024,14 @@ details.dropdown > :last-child {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+}
+.is-align-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .is-fixed {
     position: fixed;
